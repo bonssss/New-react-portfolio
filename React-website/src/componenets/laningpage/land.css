@@ -1,0 +1,65 @@
+/* styles.css */
+
+/* Hero Section */
+
+#hero {
+    background: linear-gradient(#494c5e, rgba(251, 250, 251, 0.6)), url('path/to/your/image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .hero-text {
+    max-width: 600px;
+  }
+  
+  .hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  .hero-text h3 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-right: 20px;
+  }
+  .contact-me a{
+    color: rgb(250, 248, 248);
+    text-decoration: none;
+  }
+  .contact-me button{
+    background-color: cornflowerblue;
+    border: none;
+    cursor: pointer;
+    border-radius: 5%;
+    font-size: large;
+  }
+  .contact-me {
+
+    margin-top: 30px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+  }
+  

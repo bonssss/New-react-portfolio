@@ -1,0 +1,46 @@
+/* styles.css */
+
+.projects {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .projects h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+
+  }
+  
+  .slick-slider {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .slick-slide img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .slick-prev {
+    left: 20px;
+  }
+  
+  .slick-next {
+    right: 20px;
+  }
+  

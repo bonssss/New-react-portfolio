@@ -1,0 +1,157 @@
+/* Main navigation container */
+.main-nav-container {
+  width: 100%;
+    background-color: #494c5e;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    color: wheat;
+  }
+  
+  /* Navbar */
+  .navbar {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  /* Navigation container */
+  .nav-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Logo */
+  .logo h3 {
+    font-size: 30px;
+    color: #fff;
+    margin: 0;
+    font-weight: bold;
+  }
+  .logo h3:hover{
+    cursor: pointer;
+    color: burlywood;
+
+  }
+  
+  /* List items */
+  .list-items ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-left: 50%;
+  }
+  
+  .nav-listitems {
+    margin-right: 20px;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  .listitem-link{
+    text-decoration: none;
+    color: beige;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  
+  .nav-listitems:hover {
+    color: #b5e65c; /* Change color on hover */
+    background-color: burlywood ;
+    border-radius: 70%;
+    cursor: pointer;
+
+  }
+  /* navbar.css */
+
+/* Hamburger Icon */
+.menu-toggle {
+  display: none;
+}
+
+.menu-toggle .hamburger {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.open .hamburger:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.open .hamburger:nth-child(2) {
+  opacity: 0;
+}
+
+.open .hamburger:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+
+/* Navigation Menu */
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-container.open {
+  display: block;
+}
+
+.list-items ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-listitems {
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.nav-listitems:hover {
+  background-color: rgba(244, 125, 21, 0.1);
+}
+
+/* Media query for small devices */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-container {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    left: 0;
+    /* background-color: #333; */
+  }
+
+  .list-items ul {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    text-decoration: none;
+
+  }
+
+  .nav-listitems {
+    display: block;
+    padding: 10px 20px;
+  }
+
+  .open .nav-container {
+    display: block;
+  }
+}
+
+  
