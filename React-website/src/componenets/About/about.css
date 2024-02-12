@@ -1,55 +1,90 @@
 /* About Main Container */
 .about-maincontainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    margin-top: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin-top: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* About Me Content Container */
+.about-content {
+  display: flex;
+  flex-direction: column; /* Initially display items in a column */
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+/* About Me Text Container */
+.about-text {
+  flex: 1;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* About Me Heading */
+.about-me {
+  font-size: 50px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(210, 18, 18, 0.2);
+  animation: pulse 2s infinite alternate;
+  margin-bottom: 20px;
+}
+
+/* About Me Note */
+.aboutme-note {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Profile Image Container */
+.img-pro {
+  width: 100%; /* Adjusted to make the image responsive */
+  max-width: 400px; /* Added maximum width */
+  height: auto; /* Allow height to adjust proportionally */
+  overflow: hidden;
+  margin-top: 20px; /* Adjusted margin for spacing */
+}
+
+/* Profile Image */
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Define a pulse animation */
+@keyframes pulse {
+  from {
+    transform: scale(1);
   }
-  
-  /* About Me Content Container */
+  to {
+    transform: scale(1.1);
+  }
+}
+
+/* Media query for devices with a width of at least 768px */
+@media screen and (min-width: 768px) {
   .about-content {
-    display: flex;
-    align-items: center;
+    flex-direction: row; /* Display items side by side */
     justify-content: space-between;
-    max-width: 800px;
-    width: 100%;
+    align-items: flex-start;
+    text-align: left; /* Adjust text alignment */
   }
-  
-  /* About Me Text Container */
+
   .about-text {
-    flex: 1;
-    padding: 0 20px;
+    padding: 0; /* Reset padding */
+    max-width: 50%; /* Adjusted maximum width */
+    text-align: left;
   }
-  
-  /* About Me Heading */
-  .about-me {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  /* About Me Note */
-  .aboutme-note {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 30px;
-  }
-  
-  /* Profile Image Container */
+
   .img-pro {
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 50%; /* Adjusted maximum width */
+    margin-top: 0; /* Reset margin */
   }
-  
-  /* Profile Image */
-  .profile-image {
-    
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
+}

@@ -9,10 +9,34 @@
   }
   
   .skills-title {
-    font-size: 36px;
     margin-bottom: 30px;
     color: #333;
+    font-weight: bold;
+    
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Choose a suitable font */
+      font-size: 50px; /* Adjust font size */
+      color: #333; /* Choose a suitable text color */
+      text-transform: uppercase; /* Convert text to uppercase */
+      letter-spacing: 2px; /* Add letter spacing */
+      text-shadow: 2px 2px 4px rgba(216, 27, 27, 0.2); /* Add text shadow */
+      animation: pulse 2s infinite alternate; /* Add animation */
+    
+      /* Center the text */
+      text-align: center;
+      margin-top: 50px; /* Adjust margin as needed */
   }
+    
+    /* Define a pulse animation */
+    @keyframes pulse {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.1);
+      }
+    }
+    
+  
   
   .skills-list {
     display: flex;
@@ -70,4 +94,5 @@
       width: 0;
     }
   }
+  
   

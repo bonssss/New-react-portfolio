@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./land.css";
 import cv from '../../assets/bons cv2.pdf'
+import { FaLinkedin, FaInstagram, FaTelegram, FaGithub } from 'react-icons/fa';
 
 const Landpage = () => {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -51,7 +52,12 @@ const Landpage = () => {
               <button>
                 <a href="#contact">Contact Me</a>
               </button>
-              <div className="social-icons"></div>
+              <div className="social-icons">
+               <a  className="social-media" target="_blank" href="@bons2122"><FaTelegram /></a> 
+                <a  className="social-media" target="_blank" href="https://www.instagram.com/bonsadesalegn?igsh=MWZ1YzJ5NHM2ZnJ0OQ=="><FaInstagram/></a>
+               <a className="social-media" target="_blank" href="https://www.linkedin.com/in/bonsa-desalegn-90175b257/"><FaLinkedin/></a> 
+               <a className="social-media"  target="_blank" href="https://github.com/bonssss"><FaGithub/></a> 
+              </div>
             </div>
           </div>
         </section>

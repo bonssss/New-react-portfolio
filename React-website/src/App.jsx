@@ -8,6 +8,7 @@ import Landpage from './componenets/laningpage/landpage'
 import Projects from './componenets/Project/Projects'
 import Contact from './componenets/contact/Contact'
 import Skill from './componenets/skill/Skill'
+import './app.css'
 function App() {
   const [count, setCount] = useState(0)
 

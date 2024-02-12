@@ -1,46 +1,80 @@
-/* styles.css */
+
 
 .projects {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  .projects h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 36px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+.projects h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: bold;
+  font-size: 50px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(193, 30, 30, 0.2);
+  animation: pulse 2s infinite alternate;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Define a pulse animation */
+@keyframes pulse {
+  from {
+    transform: scale(1);
   }
-  
-  .slick-slider {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
+  to {
+    transform: scale(1.1);
   }
-  
-  .slick-slide img {
-    width: 100%;
-    border-radius: 8px;
+}
+
+.slick-slider {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slick-slide img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: 20px;
+}
+
+.slick-next {
+  right: 20px;
+}
+
+.project-img:hover {
+  font-size: large;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .projects {
+    padding: 10px; /* Adjusted padding for smaller screens */
   }
-  
-  .slick-prev,
-  .slick-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    font-size: 24px;
-    color: #fff;
-    cursor: pointer;
+
+  .projects h1 {
+    font-size: 40px; /* Adjusted font size for smaller screens */
+    margin-top: 30px; /* Adjusted margin top for smaller screens */
   }
-  
-  .slick-prev {
-    left: 20px;
-  }
-  
-  .slick-next {
-    right: 20px;
-  }
-  
+}

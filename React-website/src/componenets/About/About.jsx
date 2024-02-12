@@ -1,5 +1,5 @@
 import React from 'react'
-import profileimage from '../../assets/pp.jpg'
+import profileimage from '../../assets/pp-removebg-preview.png'
 import './about.css'
 
 export const About = () => {

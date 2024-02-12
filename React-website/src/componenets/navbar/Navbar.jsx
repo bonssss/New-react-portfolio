@@ -9,12 +9,17 @@ export default function Navbar() {
     document.body.style.overflow = isOpen ? 'visible' : 'hidden';
   };
 
+  const closeNavbar = () => {
+    setIsOpen(false);
+    document.body.style.overflow = 'visible';
+  };
+
   return (
     <>
       <div className="main-nav-container">
         <div className='navbar'>
           <div className="logo">
-            <h3>BoN</h3>
+            <a href="#landingpage"><h3>BoNapp</h3></a>
           </div>
           <div className="menu-toggle" onClick={toggleNavbar}>
             <div className={`hamburger ${isOpen ? 'open' : ''}`} />
@@ -22,11 +27,11 @@ export default function Navbar() {
           <nav className={`nav-container ${isOpen ? 'open' : ''}`}>
             <div className='list-items'>
               <ul>
-              <li className="nav-listitems"><a className="listitem-link" href="#landingpage"> Home</a></li>
-                <li className="nav-listitems"><a className="listitem-link" href="#about"> About</a></li>
-                <li className="nav-listitems"><a className="listitem-link" href="#project">Project</a></li>
-                <li className="nav-listitems"><a className="listitem-link" href="#skill">skill</a></li>
-                <li className="nav-listitems"><a className="listitem-link"href="#contact">Contact</a></li>
+                <li className="nav-listitems"><a className="listitem-link" href="#landingpage" onClick={closeNavbar}> Home</a></li>
+                <li className="nav-listitems"><a className="listitem-link" href="#about" onClick={closeNavbar}> About</a></li>
+                <li className="nav-listitems"><a className="listitem-link" href="#project" onClick={closeNavbar}>Project</a></li>
+                <li className="nav-listitems"><a className="listitem-link" href="#skill" onClick={closeNavbar}>Skill</a></li>
+                <li className="nav-listitems"><a className="listitem-link" href="#contact" onClick={closeNavbar}>Contact</a></li>
               </ul>
             </div>
           </nav>
