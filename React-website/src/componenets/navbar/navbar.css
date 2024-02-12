@@ -9,6 +9,7 @@
     left: 0;
     z-index: 1000;
     color: wheat;
+    margin-right: 50px;
   }
   
   /* Navbar */
@@ -90,7 +91,7 @@
   width: 30px;
   height: 3px;
   background-color: #fff;
-  margin: 6px 0;
+  margin: 6px 50px;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -159,6 +160,12 @@
   .nav-listitems {
     display: block;
     padding: 10px 20px;
+  }
+  .nav-listitems a{
+    color: aqua;
+  }
+  .nav-listitems:hover{
+    background-color: bisque;
   }
 
   .open .nav-container {
